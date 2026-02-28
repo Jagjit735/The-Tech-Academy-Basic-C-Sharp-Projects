@@ -28,8 +28,8 @@ static void Main(string[] args)
 {
 // 3. Use polymorphism to create an object of type IQuittable
 // We use the Interface name as the type, but the Class to create it
-Employee emp= new Employee() {Name = "Arjun" };
-
+//Change  'Employee' to 'IQuittable ' for the variables emp =new Employee () {Name = "Arjun"};
+IQuittable emp = new Employee() {Name = "Arjun"};
 // Call the Quit() method on the interface object
 emp.Quit();
 
